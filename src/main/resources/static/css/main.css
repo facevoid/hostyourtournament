@@ -1,0 +1,147 @@
+/*=========================
+		Global
+============================*/
+
+body {
+    background-color: #f5f5f5;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+section {
+    padding: 40px 0px;
+}
+
+/*=========================
+		Form
+============================*/
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+/*=========================
+		Button
+============================*/
+
+.btn-login {
+    color: #ffffff;
+    background-color: #e8ba6c;
+    border-color: #ffffff;
+}
+
+/*=========================
+		Navbar
+============================*/
+
+.navbar {
+    margin-bottom: 0px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    z-index: 9999;
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: #ee1b2e;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #8986ee;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: #f5f5f5;
+}
+
+/*=========================
+		Home Page
+============================*/
+
+.home-page .header{
+
+    background-size: cover;
+    background-position: center 35%;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 35px 0px;
+    height: 100vh;
+    margin-top: -50px;
+}
+
+.home-page .header .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.header h1 {
+    color: #fff;
+    margin-top: 45px;
+    font-size: 70px;
+}
+
+.header .header-wrapper {
+    display: table;
+    position: relative;
+    width: 100%;
+    margin-top: 150px;
+}
+
+.header .header-wrapper-inner {
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+.login-form {
+    background-color: rgba(6, 6, 11, 0.64);
+    padding: 15px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.login-form h4 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+/*=========================
+		About Us
+============================*/
+
+.about-content {
+    margin-top: 20px;
+}
+
+/*=========================
+		Footer
+============================*/
+
+.footer {
+    background-color: transparent;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 15px 0px;
+    margin-top: 15px;
+}

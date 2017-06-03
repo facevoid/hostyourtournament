@@ -1,0 +1,203 @@
+
+
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+
+.cf:after {
+    clear: both;
+}
+
+
+html,body,div,h1,h2{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    /*Change the image name "football-1.jpg" if you want to change the background image. make sure image is in the same folder as the html file*/
+    background: url('../images/badminton1.jpg') no-repeat;
+    /*background: #fff;*/
+    /*uncomment "background: #fff;" if you want a color as background instead of an image. #fff is white, put any hexadecimal color code in there as you like*/
+    background-size: cover;
+}
+
+
+h1{
+    font-size: 30px;
+    margin: -20px -25px 20px;
+    padding: 20px;
+    background: #7266ba;
+    color: #fff;
+    text-shadow: 1px 2px #303030;
+    box-shadow: 0px 2px 5px #303030;
+}
+
+h2{
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%); /* IE 9 */
+    -webkit-transform: translate(-50%, -50%); /* Safari */
+    transform: translate(-50%, -50%);
+}
+
+
+section.wrapper{
+    position: relative;
+    width:800px;
+    padding: 20px 25px;
+    margin:auto;
+    background: rgba(0,0,0,.5);
+    box-sizing:border-box;
+    margin-top: 30px;
+}
+
+.first-col, .second-col, .third-col, .final-col{
+    float: left;
+    width:150px;
+    margin-right: 50px;
+}
+
+.final-col{
+    margin-right: 0;
+}
+
+
+.upper-div, .lower-div, .only-div{
+    position: relative;
+    color: #000;
+    background: #fff;
+    border: 1px solid #000;
+    height: 60px;
+    width: 160px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px #303030;
+    box-sizing:border-box;
+}
+
+/*.second-row .upper-div, .third-row .upper-div,.fourth-row .upper-div{
+    margin-top: 50px;
+}
+*/
+
+
+
+.first-col .first-row .upper-div{
+    margin-top: 0;
+}
+
+/*.first-col .first-row*/ .upper-div:after{
+                              content: '';
+                              width: 100px;
+                              height: 2px;
+                              background: #fff;
+                              position: absolute;
+                              left: 100%;
+                              top: 20%;
+                          }
+/*.first-col .first-row*/ .upper-div:before{
+                              content: '';
+                              width: 2px;
+                              height: 28px;
+                              background: #fff;
+                              position: absolute;
+                              left: calc( 100% + 100px );
+                              top: 20%;
+                          }
+
+.first-col .first-row .lower-div{
+    margin-top: 14%;
+}
+
+/*.first-col .first-row*/ .lower-div:after{
+                              content: '';
+                              width: 100px;
+                              height: 2px;
+                              background: #fff;
+                              position: absolute;
+                              left: 100%;
+                              top: 80%;
+                          }
+/*.first-col .first-row */.lower-div:before{
+                              content: '';
+                              width: 2px;
+                              height: 29px;
+                              background: #fff;
+                              position: absolute;
+                              left: calc( 100% + 100px );
+                              top: 33%;
+                          }
+
+
+
+.first-col .second-row .upper-div{
+    margin-top: 33%;
+}
+.first-col .second-row .lower-div{
+    margin-top: 14%;
+}
+.first-col .third-row .upper-div{
+    margin-top: 33%;
+}
+.first-col .third-row .lower-div{
+    margin-top: 14%;
+
+}
+.first-col .fourth-row .upper-div{
+    margin-top: 33%;
+}
+.first-col .fourth-row .lower-div{
+    margin-top: 14%;
+}
+
+.second-col .first-row .upper-div{
+    margin-top: 27%;
+}
+
+.second-col .upper-div:before{
+    height: 84px;
+}
+
+.second-col .first-row .lower-div{
+    margin-top: 87.25%;
+}
+
+.second-col .lower-div:before{
+    height: 86px;
+    top: -65%;
+}
+
+.second-col .second-row .upper-div{
+    margin-top: 87%;
+}
+.second-col .second-row .lower-div{
+    margin-top: 87%;
+}
+
+.third-col .first-row .upper-div{
+    margin-top: 90%;
+}
+.third-col .upper-div:before{
+    height: 183px;
+}
+
+.third-col .second-row .lower-div{
+    margin-top: 220%;
+}
+.third-col .lower-div:before{
+    height: 183px;
+    top: -232%;
+}
+
+.final-col .only-div{
+    margin-top: 220.5%;
+}
+
+th {
+    text-align: center;
+}

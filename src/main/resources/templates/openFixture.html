@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3" xmlns:form="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <title>Director | Dashboard</title>
+    <!-- Ionicons -->
+    <link rel="stylesheet" type="text/css"  href="/css/demo.css" th:href="@{/css/demo.css}" />
+    <link rel="stylesheet" type="text/css"  href="/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" type="text/css"  href="/css/bootstrap.css" th:href="@{/css/bootstrap.css}"/>
+    <link rel="stylesheet" type="text/css"  href="/css/style1.css" th:href="@{/css/style1.css}"/>
+    <link rel="stylesheet" type="text/css"  href="/css/open.css" th:href="@{/css/open.css}"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page">
+<ul class="cb-slideshow">
+    <li><span>Image 01</span></li>
+    <li><span>Image 02</span></li>
+    <li><span>Image 03</span></li>
+    <li><span>Image 04</span></li>
+    <li><span>Image 05</span></li>
+    <li><span>Image 06</span></li>
+</ul>
+<div class="container">
+    <div class="wrapper row-offcanvas row-offcanvas-left">
+        <!-- Left side column. contains the logo and sidebar -->
+
+
+        <aside class="right-side">
+
+            <!-- Main content -->
+            <section class="wrapper">
+                <h1 th:inline="text">[[${name}]]</h1>
+
+
+                <div class="showcase">
+                <table class="table table-responsive table-bordered  text-center" style="color: #00a65a">
+                    <tr>
+                        <td>Match no</td>
+                        <td>Team1</td>
+                        <td >Match Scores</td>
+                        <td>Team2</td>
+
+                    </tr>
+                    <tr th:each="fixture : ${fixtures}" >
+                        <td th:text="${fixture.matchNo}"></td>
+                        <td th:inline="text"> <span>[[${fixture.team1}]]</span></td>
+                        <td th:inline="text"> <span>[[${fixture.team1Score}]] - [[${fixture.team2Score}]]</span></td>
+                        <td th:inline="text"> <span>[[${fixture.team2}]]</span></td>
+
+
+                    </tr>
+                </table>
+                </div>
+
+            </section>
+
+        </aside><!-- /.right-side -->
+
+    </div><!-- ./wrapper -->
+</div>
+
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script type="text/javascript" src="/js/modernizr.custom.86080" th:href="@{/js/modernizr.custom.86080}"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js" th:href="@{/js/bootstrap.min.js}"></script>
+
+</body>
+</html>
